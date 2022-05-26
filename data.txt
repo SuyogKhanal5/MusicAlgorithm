@@ -1,0 +1,11 @@
+10
+NO-BYSTANDERS Travis-Scott true Rap 218
+Famous Kanye-West true Rap 196
+RICKY Denzel-Curry true Rap 148
+CHopstix ScHoolboy-Q false Rap 180
+BOOGIE BROCKHAMPTON true Rap 193
+Alright Kendrick-Lamar false Rap 219
+JU$T Run-The-Jewels false Rap 205
+Hit-My-Line Logic false Rap 265
+NEW-MAGIC-WAND Tyler-The-Creator false Rap 195
+Better-Now Post-Malone false Pop 231
