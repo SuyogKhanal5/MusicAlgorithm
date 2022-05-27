@@ -97,7 +97,7 @@ public class Song
 
     public void updateScore()
     {
-        score = played / (played + skipped);
+        score = (double)played / (double)(played + skipped);
     }
 
     public void resetStats()
@@ -134,6 +134,7 @@ public class Song
 
     public String toString()
     {
-        return "{" + name + ", " + artist + ", " + liked + ", " + genre + ", " + length + "}"; 
+        return "{Name: " + name + ", Artist: " + artist + ", Liked?: " + liked + ", Genre: " + genre + ", Length: " + length + "}[Skipped " + 
+        skipped + " times, Played " + played + " times. Score is " + score + ", Skip Streak is " + skipStreak; 
     }
 }
