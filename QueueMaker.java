@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class QueueMaker 
@@ -106,176 +108,72 @@ public class QueueMaker
             {
                 songList[sector].skip();
                 System.out.println("Song has been skipped");
+
+                int i = 0;
+           
+                // Initialize maximum element
+                Double maxNum = songList[0].getScore();
+                int maxSong = 0;
+                
+                // Traverse array elements from second and
+                // compare every element with current max  
+                for (i = 1; i < songList.length; i++)
+                {
+                    if (songList[i].getScore() > maxNum)
+                    {
+                        maxNum = songList[i].getScore();
+                        maxSong = i;
+                    }   
+                }
+                
+                int num = 0;
+
+                // this code is pretty bad as well
+
+                if (sector == 0) num = nums0.remove(0);
+                else if (sector == 1) num = nums1.remove(0);
+                else if (sector == 2) num = nums2.remove(0);
+                else if (sector == 3) num = nums3.remove(0);
+                else if (sector == 4) num = nums4.remove(0);
+                else if (sector == 5) num = nums5.remove(0);
+                else if (sector == 6) num = nums6.remove(0);
+                else if (sector == 7) num = nums7.remove(0);
+                else if (sector == 8) num = nums8.remove(0);
+                else if (sector == 9) num = nums9.remove(0);
+
+                if (maxSong == 0) nums0.add(num);
+                else if (maxSong == 1) nums1.add(num);
+                else if (maxSong == 2) nums2.add(num);
+                else if (maxSong == 3) nums3.add(num);
+                else if (maxSong == 4) nums4.add(num);
+                else if (maxSong == 5) nums5.add(num);
+                else if (maxSong == 6) nums6.add(num);
+                else if (maxSong == 7) nums7.add(num);
+                else if (maxSong == 8) nums8.add(num);
+                else if (maxSong == 9) nums9.add(num);
             }
+            else if (end.toUpperCase() == "END") return;
             else
             {
                 songList[sector].play();
                 System.out.println("Playing this song");
-
-                for (int i = 0; i < 9; i++)
-                {
-                    if (i != sector)
-                    {
-                        if (i == 0)
-                        {
-                            int num = nums0.remove(0);
-                            
-                            // oh my god i need to fix this later this is such bad code
-
-                            // i am so sorry programming gods
-
-                            if (sector == 0) nums0.add(num);
-                            else if (sector == 1) nums1.add(num);
-                            else if (sector == 2) nums2.add(num);
-                            else if (sector == 3) nums3.add(num);
-                            else if (sector == 4) nums4.add(num);
-                            else if (sector == 5) nums5.add(num);
-                            else if (sector == 6) nums6.add(num);
-                            else if (sector == 7) nums7.add(num);
-                            else if (sector == 8) nums8.add(num);
-                            else if (sector == 9) nums9.add(num);
-                        }
-                        else if (i == 1)
-                        {
-                            int num = nums0.remove(0);
-
-                            if (sector == 0) nums0.add(num);
-                            else if (sector == 1) nums1.add(num);
-                            else if (sector == 2) nums2.add(num);
-                            else if (sector == 3) nums3.add(num);
-                            else if (sector == 4) nums4.add(num);
-                            else if (sector == 5) nums5.add(num);
-                            else if (sector == 6) nums6.add(num);
-                            else if (sector == 7) nums7.add(num);
-                            else if (sector == 8) nums8.add(num);
-                            else if (sector == 9) nums9.add(num);
-                        }
-                        else if (i == 2)
-                        {
-                            int num = nums0.remove(0);
-
-                            if (sector == 0) nums0.add(num);
-                            else if (sector == 1) nums1.add(num);
-                            else if (sector == 2) nums2.add(num);
-                            else if (sector == 3) nums3.add(num);
-                            else if (sector == 4) nums4.add(num);
-                            else if (sector == 5) nums5.add(num);
-                            else if (sector == 6) nums6.add(num);
-                            else if (sector == 7) nums7.add(num);
-                            else if (sector == 8) nums8.add(num);
-                            else if (sector == 9) nums9.add(num);
-                        }
-                        else if (i == 3)
-                        {
-                            int num = nums0.remove(0);
-
-                            if (sector == 0) nums0.add(num);
-                            else if (sector == 1) nums1.add(num);
-                            else if (sector == 2) nums2.add(num);
-                            else if (sector == 3) nums3.add(num);
-                            else if (sector == 4) nums4.add(num);
-                            else if (sector == 5) nums5.add(num);
-                            else if (sector == 6) nums6.add(num);
-                            else if (sector == 7) nums7.add(num);
-                            else if (sector == 8) nums8.add(num);
-                            else if (sector == 9) nums9.add(num);
-                        }
-                        else if (i == 4)
-                        {
-                            int num = nums0.remove(0);
-
-                            if (sector == 0) nums0.add(num);
-                            else if (sector == 1) nums1.add(num);
-                            else if (sector == 2) nums2.add(num);
-                            else if (sector == 3) nums3.add(num);
-                            else if (sector == 4) nums4.add(num);
-                            else if (sector == 5) nums5.add(num);
-                            else if (sector == 6) nums6.add(num);
-                            else if (sector == 7) nums7.add(num);
-                            else if (sector == 8) nums8.add(num);
-                            else if (sector == 9) nums9.add(num);
-                        }
-                        else if (i == 5)
-                        {
-                            int num = nums0.remove(0);
-
-                            if (sector == 0) nums0.add(num);
-                            else if (sector == 1) nums1.add(num);
-                            else if (sector == 2) nums2.add(num);
-                            else if (sector == 3) nums3.add(num);
-                            else if (sector == 4) nums4.add(num);
-                            else if (sector == 5) nums5.add(num);
-                            else if (sector == 6) nums6.add(num);
-                            else if (sector == 7) nums7.add(num);
-                            else if (sector == 8) nums8.add(num);
-                            else if (sector == 9) nums9.add(num);
-                        }
-                        else if (i == 6)
-                        {
-                            int num = nums0.remove(0);
-
-                            if (sector == 0) nums0.add(num);
-                            else if (sector == 1) nums1.add(num);
-                            else if (sector == 2) nums2.add(num);
-                            else if (sector == 3) nums3.add(num);
-                            else if (sector == 4) nums4.add(num);
-                            else if (sector == 5) nums5.add(num);
-                            else if (sector == 6) nums6.add(num);
-                            else if (sector == 7) nums7.add(num);
-                            else if (sector == 8) nums8.add(num);
-                            else if (sector == 9) nums9.add(num);
-                        }
-                        else if (i == 7)
-                        {
-                            int num = nums0.remove(0);
-
-                            if (sector == 0) nums0.add(num);
-                            else if (sector == 1) nums1.add(num);
-                            else if (sector == 2) nums2.add(num);
-                            else if (sector == 3) nums3.add(num);
-                            else if (sector == 4) nums4.add(num);
-                            else if (sector == 5) nums5.add(num);
-                            else if (sector == 6) nums6.add(num);
-                            else if (sector == 7) nums7.add(num);
-                            else if (sector == 8) nums8.add(num);
-                            else if (sector == 9) nums9.add(num);
-                        }
-                        else if (i == 8)
-                        {
-                            int num = nums0.remove(0);
-
-                            if (sector == 0) nums0.add(num);
-                            else if (sector == 1) nums1.add(num);
-                            else if (sector == 2) nums2.add(num);
-                            else if (sector == 3) nums3.add(num);
-                            else if (sector == 4) nums4.add(num);
-                            else if (sector == 5) nums5.add(num);
-                            else if (sector == 6) nums6.add(num);
-                            else if (sector == 7) nums7.add(num);
-                            else if (sector == 8) nums8.add(num);
-                            else if (sector == 9) nums9.add(num);
-                        }
-                        else if (i == 9)
-                        {
-                            int num = nums0.remove(0);
-
-                            if (sector == 0) nums0.add(num);
-                            else if (sector == 1) nums1.add(num);
-                            else if (sector == 2) nums2.add(num);
-                            else if (sector == 3) nums3.add(num);
-                            else if (sector == 4) nums4.add(num);
-                            else if (sector == 5) nums5.add(num);
-                            else if (sector == 6) nums6.add(num);
-                            else if (sector == 7) nums7.add(num);
-                            else if (sector == 8) nums8.add(num);
-                            else if (sector == 9) nums9.add(num);
-                        }
-                    }
-                }
             }
         }
 
         StdOut.setFile("output.txt");
+
+        StdOut.println(songList);
+        StdOut.println(nums0);
+        StdOut.println(nums1);
+        StdOut.println(nums2);
+        StdOut.println(nums3);
+        StdOut.println(nums4);
+        StdOut.println(nums5);
+        StdOut.println(nums6);
+        StdOut.println(nums7);
+        StdOut.println(nums8);
+        StdOut.println(nums9);
+
     }
     
     public static Song[] createSongList()

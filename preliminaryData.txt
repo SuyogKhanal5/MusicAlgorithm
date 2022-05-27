@@ -1,0 +1,10 @@
+{Name: NO-BYSTANDERS, Artist: Travis-Scott, Liked?: true, Genre: Rap, Length: 218}[Skipped 0 times, Played 3 times. Score is 1.0, Skip Streak is 0
+{Name: Famous, Artist: Kanye-West, Liked?: true, Genre: Rap, Length: 196}[Skipped 1 times, Played 2 times. Score is 0.6666666666666666, Skip Streak is 1
+{Name: RICKY, Artist: Denzel-Curry, Liked?: true, Genre: Rap, Length: 148}[Skipped 1 times, Played 2 times. Score is 0.6666666666666666, Skip Streak is 1
+{Name: CHopstix, Artist: ScHoolboy-Q, Liked?: false, Genre: Rap, Length: 180}[Skipped 1 times, Played 2 times. Score is 0.6666666666666666, Skip Streak is 1
+{Name: BOOGIE, Artist: BROCKHAMPTON, Liked?: true, Genre: Rap, Length: 193}[Skipped 0 times, Played 3 times. Score is 1.0, Skip Streak is 0
+{Name: Alright, Artist: Kendrick-Lamar, Liked?: false, Genre: Rap, Length: 219}[Skipped 1 times, Played 2 times. Score is 0.6666666666666666, Skip Streak is 1
+{Name: JU$T, Artist: Run-The-Jewels, Liked?: false, Genre: Rap, Length: 205}[Skipped 1 times, Played 2 times. Score is 0.6666666666666666, Skip Streak is 1
+{Name: Hit-My-Line, Artist: Logic, Liked?: false, Genre: Rap, Length: 265}[Skipped 1 times, Played 2 times. Score is 0.6666666666666666, Skip Streak is 1
+{Name: NEW-MAGIC-WAND, Artist: Tyler-The-Creator, Liked?: false, Genre: Rap, Length: 195}[Skipped 1 times, Played 2 times. Score is 0.6666666666666666, Skip Streak is 1
+{Name: Better-Now, Artist: Post-Malone, Liked?: false, Genre: Pop, Length: 231}[Skipped 1 times, Played 2 times. Score is 0.6666666666666666, Skip Streak is 1
