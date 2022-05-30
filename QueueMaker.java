@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class QueueMaker 
@@ -19,7 +17,7 @@ public class QueueMaker
         
         StdOut.setFile("preliminaryData.txt");
 
-        while (end.toUpperCase() != "END" && iterations != 30) // collect preliminary data 
+        while (end.toUpperCase().equals("END") && iterations != 30) // collect preliminary data 
         {
             if (songSelect > songNum - 1) songSelect = 0;
 
@@ -34,7 +32,7 @@ public class QueueMaker
                 songList[songSelect].skip();
                 System.out.println("Song has been skipped");
             }
-            else
+            else if (!end.toUpperCase().equals("END"))
             {
                 songList[songSelect].play();
                 System.out.println("Playing this song");
@@ -81,7 +79,7 @@ public class QueueMaker
             else if (num == 9) nums9.add(i);
         }
 
-        while (end.toUpperCase() != "END") // actual reccomendations 
+        while (!end.toUpperCase().equals("END")) // actual reccomendations 
         {
             int rand = (int)(Math.random() * 100);
             int sector = 0;
