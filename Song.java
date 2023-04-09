@@ -1,5 +1,4 @@
-public class Song
-{
+public class Song {
     private String name;
     private String artist;
     private int length;
@@ -10,8 +9,7 @@ public class Song
     private int skipStreak;
     private String genre;
 
-    public Song()
-    {
+    public Song() {
         name = null;
         artist = null;
         length = 0;
@@ -23,8 +21,7 @@ public class Song
         genre = null;
     }
 
-    public Song(String n, String a, int l, int p, int s, double sc, boolean li, int ss, String g)
-    {
+    public Song(String n, String a, int l, int p, int s, double sc, boolean li, int ss, String g) {
         name = n;
         artist = a;
         length = l;
@@ -36,8 +33,7 @@ public class Song
         genre = g;
     }
 
-    public Song(String n, String a, int l, boolean li, String g)
-    {
+    public Song(String n, String a, int l, boolean li, String g) {
         name = n;
         artist = a;
         length = l;
@@ -45,96 +41,81 @@ public class Song
         genre = g;
     }
 
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
 
-    public String getArtist()
-    {
+    public String getArtist() {
         return artist;
     }
 
-    public int getLength()
-    {
+    public int getLength() {
         return length;
     }
 
-    public int getPlays()
-    {
+    public int getPlays() {
         return played;
     }
 
-    public int skipNum()
-    {
+    public int skipNum() {
         return skipped;
     }
 
-    public double getScore()
-    {
+    public double getScore() {
         return score;
     }
 
-    public boolean getLiked()
-    {
+    public boolean getLiked() {
         return liked;
     }
 
-    public int getSkipStreak()
-    {
+    public int getSkipStreak() {
         return skipStreak;
     }
 
-    public String getGenre()
-    {
+    public String getGenre() {
         return genre;
     }
 
-    public void resetStreak()
-    {
+    public void resetStreak() {
         skipStreak = 0;
     }
 
-    public void updateScore()
-    {
-        score = (double)played / (double)(played + skipped);
+    public void updateScore() {
+        score = (double) played / (double) (played + skipped);
     }
 
-    public void resetStats()
-    {
+    public void resetStats() {
         score = 0;
         played = 0;
         skipped = 0;
         liked = false;
     }
 
-    public void like()
-    {
+    public void like() {
         liked = true;
     }
 
-    public void unlike()
-    {
+    public void unlike() {
         liked = false;
     }
 
-    public void play()
-    {
+    public void play() {
         played++;
         resetStreak();
         updateScore();
     }
 
-    public void skip()
-    {
+    public void skip() {
         skipped++;
         skipStreak++;
         updateScore();
     }
 
-    public String toString()
-    {
-        return "{Name: " + name + ", Artist: " + artist + ", Liked?: " + liked + ", Genre: " + genre + ", Length: " + length + "}[Skipped " + 
-        skipped + " times, Played " + played + " times. Score is " + score + ", Skip Streak is " + skipStreak; 
+    public String toString() {
+        return "{Name: " + name + ", Artist: " + artist + ", Liked?: " + liked + ", Genre: " + genre + ", Length: "
+                + length + "}[Skipped " +
+                skipped + " times, Played " + played + " times. Score is " + score + ", Skip Streak is " + skipStreak
+                + " times]";
     }
 }
