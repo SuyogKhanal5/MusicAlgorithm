@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+// need to rewrite this im not sure what exactly a lot of this is doing
+
 public class QueueMaker 
 {
     public static int songNum = 0;
@@ -127,6 +129,9 @@ public class QueueMaker
                 int num = 0;
 
                 // this code is pretty bad as well
+                // well at least i knew back then
+
+                // switch case is better
 
                 if (sector == 0) num = nums0.remove(0);
                 else if (sector == 1) num = nums1.remove(0);
@@ -172,6 +177,7 @@ public class QueueMaker
         StdOut.println(nums8);
         StdOut.println(nums9);
 
+        scan.close();
     }
     
     public static Song[] createSongList()
@@ -190,14 +196,11 @@ public class QueueMaker
             String genre = "";
             int length = 0;
 
-            for (int j = 0; j < 5; j++)
-            {
-                if (j == 0) name = StdIn.readString();
-                else if (j == 1) artist = StdIn.readString();
-                else if (j == 2) liked = StdIn.readBoolean();
-                else if (j == 3) genre = StdIn.readString();
-                else if (j == 4) length = StdIn.readInt(); 
-            }
+            name = StdIn.readString();
+            artist = StdIn.readString();
+            liked = StdIn.readBoolean();
+            genre = StdIn.readString();
+            length = StdIn.readInt(); 
 
             Song newSong = new Song(name, artist, length, liked, genre);
 
